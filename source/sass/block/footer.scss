@@ -1,0 +1,10 @@
+footer {
+    width: 100%;
+    padding: 40px 0;
+    background-color: lightgray;
+
+    div {
+        @include font-setting(36px, 40px, 700, $black);
+        text-align: center;
+    }
+}

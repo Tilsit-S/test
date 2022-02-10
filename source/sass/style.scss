@@ -1,0 +1,17 @@
+@import
+    "./node_modules/bootstrap/scss/bootstrap";
+
+@import
+    "normalize",
+    "fonts",
+    "variables",
+    "mixins",
+    "global",
+    "animation";
+
+// block
+@import
+    "block/header",
+    "block/launch",
+    "block/content",
+    "block/footer";
