@@ -2,31 +2,36 @@
     position: relative;
     background-color: $tint-blue;
     width: 100%;
-    display: flex;
-    justify-content: end;
-    padding: 0 160px;
+    padding-bottom: 126px;
 }
 
 .header__navigation {
-    position: relative;
     display: flex;
+    justify-content: end;
+    margin: 0 160px;
+    padding: 33px 0;
+    position: relative;
     align-items: center;
-    padding: 31px 0;
 }
 
 .header__navigation::before {
     position: absolute;
-    content: "";
-    background-image: url("source/img/header/icon.svg");
-    display: block;
-    width: 121px;
-    height: 27px;
+    content: "{finsweet";
+    color: #ffffff;
+    width: 122px;
+    height: 28px;
+    left: 0;
+    font-size: 24px;
+    font-weight: 600;
 }
 
 .navigation__list {
     display: flex;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
     padding-right: 50px;
-    color: #e5e5e5;
+    color: #bbbbcb;
 }
 
 .navigation__item:not(:last-child) {
@@ -35,6 +40,10 @@
 
 .navigation__item:nth-child(5) {
     text-transform: uppercase;
+}
+
+.navigation__item:nth-child(1) {
+    color: #ffffff;
 }
 
 .navigation__button {

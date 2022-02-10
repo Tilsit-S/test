@@ -1,0 +1,107 @@
+.how-we-work {
+    background-color: $grey;
+    top: 0;
+    left: 0;
+}
+
+.how-we-work__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 128px;
+    padding: 128px 0;
+}
+
+.how-we-work__information {
+    max-width: 405px;
+}
+
+.information__title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 64px;
+    color: #282938;
+}
+
+.information__text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.information__link {
+    position: relative;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.information__link::after {
+    position: absolute;
+    content: url("../img/main/how-we-work/arrow.svg");
+    right: -49px;
+    top: -3px;
+    width: 29px;
+    color: #0a58ca;
+}
+
+.how-we-work__chapter {
+    max-width: 656px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chapter__item {
+    position: relative;
+    max-width: 328px;
+}
+
+.chapter__item:nth-child(1)::before {
+    position: absolute;
+    content: url("../img/main/how-we-work/01.svg");
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 0;
+}
+
+.chapter__item:nth-child(2)::before {
+    position: absolute;
+    content: url("../img/main/how-we-work/02.svg");
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 0;
+}
+
+.chapter__item:nth-child(3)::before {
+    position: absolute;
+    content: url("../img/main/how-we-work/03.svg");
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 0;
+}
+
+.chapter__item:nth-child(4)::before {
+    position: absolute;
+    content: url("../img/main/how-we-work/04.svg");
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 0;
+}
+
+.chapter__title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    padding-top: 66px;
+    color: #282938;
+}
+
+.chapter__text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #282938;
+}
