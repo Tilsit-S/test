@@ -1,0 +1,108 @@
+.our-projects {
+    position: relative;
+    background: #ffffff;
+}
+
+.our-projects__wrapper {
+    position: relative;
+    margin: 0 128px;
+    padding: 128px 0;
+}
+
+.our-projects__infofmation {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+}
+
+.our-projects__title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 64px;
+    color: $dark-blue;
+}
+
+.our-projects__link {
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: $dark-blue;
+}
+
+.our-projects__link::after {
+    position: absolute;
+    content: url("../img/main/how-we-work/arrow.svg");
+    right: -49px;
+    top: 0;
+    width: 29px;
+    color: $dark-blue;
+}
+
+.our-projects__list {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.our-projects__item.item {
+    position: relative;
+}
+
+.our-projects__item:nth-child(1) {
+    margin-right: 23px;
+}
+
+.our-projects img {
+    position: relative;
+}
+
+.info-block {
+    position: absolute;
+    max-width: 396px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: linear-gradient(329.39deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
+}
+
+.info-block__wrapper {
+    padding: 0 30px 64px 48px;
+    z-index: 1;
+}
+
+.info-block__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #ffffff;
+}
+
+.info-block__text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+.info-block__link {
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: $yellow;
+}
+
+.info-block__link::after {
+    position: absolute;
+    content: url("../img/main/our-projects/yellow-arrow.svg");
+    left: 120px;
+    top: 0;
+    width: 29px;
+    color: $yellow;
+}
