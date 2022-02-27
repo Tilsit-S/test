@@ -22,7 +22,7 @@
     color: $dark-blue;
 }
 
-.information__title::before {
+.main__features .information__title::before {
     position: absolute;
     content: "Features";
     font-weight: 500;
@@ -44,6 +44,7 @@
     position: relative;
     max-width: 405px;
     background: #ffffff;
+    margin: 15px;
 }
 
 .list__item:nth-child(1)::before {

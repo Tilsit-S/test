@@ -5,7 +5,6 @@
 
 .our-projects__wrapper {
     position: relative;
-    margin: 0 128px;
     padding: 128px 0;
 }
 
@@ -13,6 +12,7 @@
     position: relative;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 64px;
 }
 

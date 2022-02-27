@@ -4,7 +4,7 @@ footer {
     background-color: lightgray;
 
     div {
-        @include font-setting(36px, 40px, 700, $black);
+        @include font-setting(36px, 40px, 700, #000000);
         text-align: center;
     }
 }

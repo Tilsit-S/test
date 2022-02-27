@@ -19,9 +19,9 @@
     }
 }
 
-@mixin font-setting($size, $line-height, $font-width, $color: $black) {
+@mixin font-setting($size, $line-height, $font-width, $font-color) {
     font-size: $size;
     line-height: $line-height;
     font-weight: $font-width;
-    color: $color;
+    color: $font-color;
 }
