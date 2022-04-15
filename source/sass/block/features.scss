@@ -1,43 +1,52 @@
 .features {
+    
     background: $grey;
-}
+    &__wrapper {
+        position: relative;
+        margin: 0 160px;
+        padding: 128px 0;
+    }
 
-.features__wrapper {
-    margin: 0 160px;
-    padding: 128px 0;
-}
+    &__information {
+        position: relative;
+        max-width: 630px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 62px;
+    
+        &__wrapper {
+            position: relative;
+            margin: 0 160px;
+            padding: 128px 0;
+        }
 
-.features__information {
-    max-width: 630px;
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 62px;
-}
-
-.information__title {
-    position: relative;
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 64px;
-    color: $dark-blue;
-}
-
-.main__features .information__title::before {
-    position: absolute;
-    content: "Features";
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 28px;
-    color: $dark-blue;
-    top: -40px;
-    left: 290px;
+        &__title {
+            position: relative;
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 64px;
+            color: $dark-blue;
+            
+            &::before {
+                position: absolute;
+                content: "Features";
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 28px;
+                color: $dark-blue;
+                top: -40px;
+                left: 290px;
+            }
+        }
+    }
 }
 
 .features__list {
     position: relative;
+    max-width: 1305px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .list__item {
@@ -45,60 +54,59 @@
     max-width: 405px;
     background: #ffffff;
     margin: 15px;
-}
+    &:nth-child(1)::before {
+        position: absolute;
+        content: url("../img/main/features/icon-client.svg");
+        left: 48px;
+        top: 50px;
+        width: 32px;
+        height: 28px;
+    }
+    
+    &:nth-child(2)::before {
+        position: absolute;
+        content: url("../img/main/features/icon-ok.svg");
+        left: 48px;
+        top: 50px;
+        width: 32px;
+        height: 28px;
+    }
 
-.list__item:nth-child(1)::before {
-    position: absolute;
-    content: url("../img/main/features/icon-client.svg");
-    left: 48px;
-    top: 50px;
-    width: 32px;
-    height: 28px;
-}
+    &:nth-child(3)::before {
+        position: absolute;
+        content: url("../img/main/features/icon-custom.svg");
+        left: 48px;
+        top: 50px;
+        width: 32px;
+        height: 28px;
+    }
 
-.list__item:nth-child(2)::before {
-    position: absolute;
-    content: url("../img/main/features/icon-ok.svg");
-    left: 48px;
-    top: 50px;
-    width: 32px;
-    height: 28px;
-}
+    &:nth-child(4)::before {
+        position: absolute;
+        content: url("../img/main/features/icon-support.svg");
+        left: 48px;
+        top: 50px;
+        width: 32px;
+        height: 28px;
+    }
 
-.list__item:nth-child(3)::before {
-    position: absolute;
-    content: url("../img/main/features/icon-custom.svg");
-    left: 48px;
-    top: 50px;
-    width: 32px;
-    height: 28px;
-}
+    &:nth-child(5)::before {
+        position: absolute;
+        content: url("../img/main/features/icon-delivery.svg");
+        left: 48px;
+        top: 50px;
+        width: 32px;
+        height: 28px;
+    }
 
-.list__item:nth-child(4)::before {
-    position: absolute;
-    content: url("../img/main/features/icon-support.svg");
-    left: 48px;
-    top: 50px;
-    width: 32px;
-    height: 28px;
-}
-
-.list__item:nth-child(5)::before {
-    position: absolute;
-    content: url("../img/main/features/icon-delivery.svg");
-    left: 48px;
-    top: 50px;
-    width: 32px;
-    height: 28px;
-}
-
-.list__item:nth-child(6)::before {
-    position: absolute;
-    content: url("../img/main/features/icon-approach.svg");
-    left: 48px;
-    top: 50px;
-    width: 32px;
-    height: 28px;
+    &:nth-child(6)::before {
+        position: absolute;
+        content: url("../img/main/features/icon-approach.svg");
+        left: 48px;
+        top: 50px;
+        width: 32px;
+        height: 28px;
+    }
 }
 
 .item__wrapper {
