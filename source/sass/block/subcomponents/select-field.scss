@@ -1,0 +1,171 @@
+.select-field {
+    position: relative;
+    width: fit-content;
+    cursor: pointer;
+
+    &:hover {
+        .select-field__title {
+            color: #3ca9f0;
+        }
+
+        .select-field__current-value {
+            border: 1px solid #3ca9f0;
+        }
+    }
+
+    &_show-menu {
+        .select-field__title {
+            color: #3ca9f0;
+
+            &::after {
+                transform: rotate(180deg);
+            }
+        }
+
+        .select-field__current-value {
+            border: 1px solid #3ca9f0;
+        }
+
+        .select-field__list {
+            opacity: 1;
+            visibility: visible;
+            transform: translate(-50%, 10px);
+            top: 20px;
+            z-index: 3;
+        }
+    }
+
+    &__title {
+        position: absolute;
+        top: -11px;
+        left: 16px;
+        display: block;
+        max-width: 100px;
+        font-size: 16px;
+        background-color: #fff;
+        padding: 0 5px;
+        z-index: 3;
+
+        @media (max-width: 1300px) {
+            font-size: 14px;
+        }
+
+        &::after {
+            position: absolute;
+            top: 27px;
+            right: -30px;
+            content: "";
+            display: block;
+            width: 24px;
+            height: 24px;
+            background: url("../img/main/arrow.svg") no-repeat right;
+            background-size: contain;
+        }
+    }
+
+    &__current-value {
+        overflow: hidden;
+        position: relative;
+        display: block;
+        width: 121px;
+        height: 100%;
+        padding: 17px 16px;
+        border: 1px solid #eaeaea;
+        border-radius: 10px;
+        background-color: #fff;
+    }
+
+    &__hidden-field {
+        visibility: hidden;
+    }
+
+    &__list {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, 15px);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.2s ease;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 120px;
+        border-radius: 12px;
+        border: 1.25px solid #eaeaea;
+        background: #fff;
+        box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.12);
+    }
+
+    &__item {
+        font-size: 18px;
+        line-height: 21px;
+        padding: 10px 16px;
+
+        &_selected {
+            position: relative;
+            font-weight: 600;
+            color: #343434;
+            opacity: 1 !important;
+            cursor: default;
+
+            &::after {
+                position: absolute;
+                content: "";
+                width: 1px;
+                height: 14px;
+                background-color: #343434;
+                right: 25px;
+                top: 14px;
+                transform: rotate(45deg);
+            }
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: 9px;
+                height: 1px;
+                right: 29px;
+                top: 23px;
+                background-color: #343434;
+                transform: rotate(45deg);
+            }
+        }
+    }
+
+    &__select {
+        width: 120px;
+        height: 100%;
+        padding-left: 15px;
+        border: 1px solid #eaeaea;
+        border-radius: 10px;
+        appearance: none;
+        background: url("../img/main/arrow.svg") no-repeat right;
+        background-size: 24px 24px;
+        background-position-x: calc(100% - 15px);
+        cursor: pointer;
+    }
+}
+
+
+@media (max-width: $tablet-width) {
+
+    .select-field {
+
+        &__list {
+            left: 50%;
+        }
+
+        &_show-menu {
+
+            .select-field__list {
+                @media (max-width: 500px) {
+                    transform: translate(-15%, 15px);
+                    left: 15%;
+                }
+            }
+        }
+
+    }
+
+}

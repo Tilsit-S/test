@@ -1,0 +1,7 @@
+@import "normalize", "fonts", "variables", "mixins", "global", "animation";
+
+// components
+
+@import "block/components/header.scss", "block/components/form.scss",
+        "block/subcomponents/select-field.scss";
+
