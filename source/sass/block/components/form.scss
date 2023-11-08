@@ -315,7 +315,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 158px;
+            min-width: 158px;
+            max-width: 250px;
             padding: 18px 20px;
             text-align: center;
             color: #3ca9f0;
@@ -418,10 +419,10 @@
 
             &__back-button {
                 margin: 0 0 20px 0;
-                width: 49%;
+                min-width: 49%;
 
                 @media (max-width: 500px) {
-                    width: 100%;
+                    min-width: 100%;
                 }
             }
 
