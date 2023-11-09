@@ -68,6 +68,11 @@ ul {
 
 .container {
     @include breakpoint;
+
+    @media (max-width: 1600px) {
+        padding: 0 40px;
+    }
+
 }
 
 .link {
